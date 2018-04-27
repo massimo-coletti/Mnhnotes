@@ -1,6 +1,6 @@
 # findstr examples
 
-+ Search for string "tralala" in all .java files in current folder and all subfolders. Case insensitive. Redirect results to file.
++ Search for string "tralala" in all .java files in current folder and all subfolders (/s flag). Case insensitive (/i flag). Redirect results to output file.
 ```
 findstr /s /i tralala *.java > c:\temp\search_results.out
 ```
@@ -28,7 +28,7 @@ findstr /c:"granny Smith" Contacts.out
 
 -----------------------------
 
-+ Use regex to search for lines containing both "hello" and "goodbye" in any order. Case insensitive.
++ Use regex (/r flag) to search for lines containing both "hello" and "goodbye" in any order. Search all .log files in current folder and all subfolders. Case insensitive.
 ```
-findstr /i /r /c:"hello.*goodbye" /c:"goodbye.*hello" somefile.log
+findstr /s /i /r /c:"hello.*goodbye" /c:"goodbye.*hello" *.log
 ```
