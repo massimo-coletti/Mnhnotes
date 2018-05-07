@@ -112,3 +112,13 @@ Another way to free up disk space is to use `autoremove`. It removes libraries a
 ```
 sudo apt-get autoremove
 ```
+
+-----------------------------
+
+To add a new repository use the `add-apt-repository` command. This will add a line with the external APT repository to `/etc/apt/sources.list` or add a file in `/etc/apt/sources.list.d/` directory. For example to add the latest vim version, run the following:
+
+```
+sudo add-apt-repository ppa:jonathonf/vim
+```
+
+Then run `sudo apt-get update` to update the local package database. Finally install it with `sudo apt install vim`
