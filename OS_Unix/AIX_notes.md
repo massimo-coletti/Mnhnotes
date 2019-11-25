@@ -62,6 +62,11 @@ https://www.ibm.com/support/knowledgecenter/TI0003N/p8hat/p8hat_partitioningwith
     chsysstate -r lpar -m Server-8202-E4B-SN064A13R -o shutdown --immed --restart -n va-tlv-ctm-qa03
 ```
 
++ Turn on LPAR:
+```
+    chsysstate -o on -r lpar -n va-tlv-ctm-pt01 -m Server-7895-43X-SN210110C
+```
+
 + List memory resources of managed system:
 ```
     lshwres -r mem -m Server-8202-E4B-SN06EB53P --level sys
