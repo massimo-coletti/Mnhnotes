@@ -21,6 +21,17 @@
 
 -----------------------------
 
+## NIS client: master and slaves list
+```
+    # cat /var/yp/binding/<nis-domain>/ypservers
+       ip-address-1
+       ip-address-2
+       ...
+       ip-address-n
+```
+
+-----------------------------
+
 ## Find last logins to machine
 
 The `last` command displays, in reverse chronological order, all previous logins and logoffs still recorded in the `/var/adm/wtmp file`. However the output does not contain the year. Instead of this you can use the following:
