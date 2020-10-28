@@ -1,3 +1,7 @@
+# AIX Notes
+
+-----------------------------
+
 ## Restart NIS subsystem
 ```
    stopsrc -g yp
@@ -11,6 +15,12 @@
    stopsrc -s sshd
    startsrc -s sshd
 ```
+
+-----------------------------
+
+## How to Expand Filesystem
+
+http://geekswing.com/geek/how-to-expand-a-filesystem-in-aix-df-lsvg-chfs/
 
 -----------------------------
 
