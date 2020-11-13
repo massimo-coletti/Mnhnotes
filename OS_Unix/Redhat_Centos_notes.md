@@ -1,5 +1,5 @@
 ## How to disable IPv6 on CentOS / RHEL 7
-Append below lines to /etc/sysctl.conf:
+Append below lines to `/etc/sysctl.conf`:
 ```
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
