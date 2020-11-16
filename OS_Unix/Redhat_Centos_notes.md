@@ -29,7 +29,7 @@ centos-release-7-1.1503.el7.centos.2.8.x86_64
 Now google and download corresponding rpm, for example:
 ```
 cd /tmp
-wget https://buildlogs.centos.org/c7.01.00/centos-release/20150331222524/7-1.1503.el7.centos.2.8.x86_64/centos-release-7-1.1503.el7.centos.2.8.x86_64.rpm
+wget https://some-url/centos-release-7-1.1503.el7.centos.2.8.x86_64.rpm
 ```
 
 Finally reinstall this rpm using following command:
