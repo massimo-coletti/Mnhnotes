@@ -1,3 +1,8 @@
+## Run du without traversing mounted file systems
+```
+for i in /*; do if ! mountpoint -q "$i"; then du -sh $i; fi; done
+```
+
 ## How to disable IPv6 on CentOS / RHEL 7
 Append below lines to `/etc/sysctl.conf`:
 ```
