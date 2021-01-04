@@ -20,6 +20,7 @@
 
 ## How to Expand Filesystem
 
+https://www.wachid.web.id/2018/05/how-to-extend-aix-file-system-df-lsvg.html
 http://geekswing.com/geek/how-to-expand-a-filesystem-in-aix-df-lsvg-chfs/
 
 -----------------------------
