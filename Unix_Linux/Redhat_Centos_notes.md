@@ -3,6 +3,8 @@
 for i in /*; do if ! mountpoint -q "$i"; then du -sh $i; fi; done
 ```
 
+-----------------------------
+
 ## How to disable IPv6 on CentOS / RHEL 7
 Append below lines to `/etc/sysctl.conf`:
 ```
@@ -40,6 +42,44 @@ wget https://some-url/centos-release-7-1.1503.el7.centos.2.8.x86_64.rpm
 Finally reinstall this rpm using following command:
 ```
 rpm -ivh --replacepkgs --replacefiles <downloaded rpm>
+```
+
+-----------------------------
+
+## Build vim from source
+
+**First time only:** remove existing vim, and install required dev/build packages.
+```
+# find existing installation and vim packages
+type -a vim
+whereis vim
+yum list installed | grep vim
+rpm -qa | grep vim
+
+# yum remove above vim packages *except* vim-minimal which is required for other OS functionality
+yum remove ...
+
+# Install required dev/build packages
+yum group install "development tools"
+yum install ncurses-devel
+```
+
+Build latest vim from source (also update previously built vim)
+```
+cd /tmp
+git clone https://github.com/vim/vim.git
+cd vim
+./configure --with-features=huge --enable-multibyte --enable-cscope --prefix=/usr/local
+make install
+cd /tmp
+rm -rf /tmp/vim
+```
+
+Verify new vim version
+```
+type -a vim
+whereis vim
+vim
 ```
 
 -----------------------------
