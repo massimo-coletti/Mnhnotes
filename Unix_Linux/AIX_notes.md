@@ -1,6 +1,14 @@
 # AIX Notes
 
 -----------------------------
+## Install from NIM Server
+```
+   smitty nim_inst_latest
+```
+Select target client to install software. Select lpp source.
+Press PF4 to select desired software, agree to licences and Enter.
+
+-----------------------------
 
 ## Restart NIS subsystem
 ```
