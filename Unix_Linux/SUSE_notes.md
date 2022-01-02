@@ -1,4 +1,32 @@
+## SUSEConnect commands
+
+Check subscription status
+```
+SUSEConnect --status-text
+```
+
+Register
+```
+SUSEConnect -r <Registration ID> -e email --url https://scc.suse.com
+```
+
+Unregister
+```
+SUSEConnect --de-register
+SUSEConnect --cleanup
+```
+
 ## zypper commands
+
+Add repository with no gpg check. Note the repo alias at end of command
+```
+zypper addrepo --no-gpgcheck https://download.opensuse.org/repositories/Java:Factory/SLE_15_SP3 pxinstjre
+```
+
+Remove repository by alias
+```
+zypper removerepo pxinstjre
+```
 
 Search only installed packages
 ```
